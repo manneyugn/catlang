@@ -1,0 +1,38 @@
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHIÊN DỊCH TIẾNG MÈO KÊU</title>
+    <link rel="stylesheet" href="./styles.css"> <!-- Kết nối file CSS -->
+</head>
+
+<body>
+    <div class="container">
+        <h2>PHIÊN DỊCH TIẾNG MÈO KÊU</h2>
+
+        <div class="form-group">
+            <label>Nhập ký tự bình thường:</label>
+            <textarea id="normalText" placeholder="Nhập ký tự bình thường ở đây..."></textarea>
+        </div>
+
+        <button onclick="convertToBinary()">Chuyển Đổi Sang Tiếng Mèo</button>
+
+        <div class="form-group">
+            <label>Nhập tiếng mèo kêu:</label>
+            <textarea id="binaryInput" placeholder="Nhập tiếng mèo kêu ở đây..."></textarea>
+        </div>
+
+        <button onclick="convertToNormal()">Chuyển Đổi Sang Ký Tự Bình Thường</button>
+
+        <h3>Kết Quả:</h3>
+        <div id="result" class="result" style="display: none;"></div>
+        <button class="copy-button" id="copyButton" style="display: none;" onclick="copyResult()">Sao Chép Kết
+            Quả</button>
+        <div id="notification" class="notification" style="display: none;">Đã sao chép!</div>
+    </div>
+
+    <script src="./script.js"></script> <!-- Kết nối file JavaScript -->
+</body>
+
+</html>
